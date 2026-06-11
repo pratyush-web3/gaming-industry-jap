@@ -287,20 +287,62 @@ html {
     animation: pulse-ring 2.4s ease-out infinite;
   }
 
-  @keyframes scan {
-    0% {
-      transform: translateY(-100%);
-      opacity: 0;
-    }
-    50% {
-      opacity: 0.6;
-    }
-    100% {
-      transform: translateY(100%);
-      opacity: 0;
-    }
-  }
   .animate-scan {
     animation: scan 6s linear infinite;
+  }
+}
+
+/* Bug_003 Fix: Spacing and layout fixes for nav bar and hero section */
+@media (max-width: 1023px) {
+  .hero-grid {
+    gap: 1.5rem;
+  }
+  .hero-text {
+    order: 1;
+  }
+  .hero-image {
+    order: 2;
+  }
+  .hero-stats {
+    order: 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-text {
+    order: 0;
+  }
+}
+
+/* Ensure text doesn't get hidden behind images */
+.hero-image-container {
+  position: relative;
+  z-index: 1;
+}
+.hero-image-container img {
+  max-height: 720px;
+  object-fit: cover;
+}
+
+/* Bug_003 Fix: Fixed nav positioning and hero section spacing */
+.top-nav-padding {
+  padding-top: 5rem;
+}
+
+@media (max-width: 1023px) {
+  section:first-of-type {
+    padding-top: 2rem;
+  }
+  .hero-left {
+    margin-bottom: 0;
+  }
+  .hero-image-wrapper {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-section {
+    min-height: 80vh;
   }
 }

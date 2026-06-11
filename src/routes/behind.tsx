@@ -35,8 +35,8 @@ const PIPELINE = [
   },
   {
     n: "07",
-    t: "QA / 検証",
-    b: "自動テスト基盤と熟練のヒューマンQAを併用。各機能ごとに2,000以上のテストケースを実施します。",
+    t: "品質保証 / 検証",
+    b: "自動テスト基盤と熟練の人間による品質保証を併用。各機能ごとに2,000以上のテストケースを実施します。",
   },
   {
     n: "08",
@@ -85,12 +85,12 @@ export default function Behind() {
             </p>
           </div>
           <div className="card-surface rounded-sm p-8 font-mono text-xs">
-            <div className="text-[var(--accent-cyan)]">$ daily_schedule</div>
+            <div className="text-[var(--accent-cyan)]">$ 日次スケジュール</div>
             <div className="mt-4 space-y-2 text-[var(--text-muted)]">
               {[
-                ["10:00", "全体朝会 — 15min"],
-                ["10:30", "個別作業 / セクションスクラム"],
-                ["13:00", "ランチ — フリー"],
+                ["10:00", "全体朝会 — 15分"],
+                ["10:30", "個別作業 / チーム別開発"],
+                ["13:00", "昼食 — 自由時間"],
                 ["14:00", "レビュー会 — チーム別"],
                 ["16:00", "個別作業 / 実装"],
                 ["18:00", "自主退社 — クランチ禁止"],

@@ -48,11 +48,7 @@ const SECTIONS = [
 export default function Privacy() {
   return (
     <SiteShell>
-      <PageHeader
-        kicker="法務 — 法務"
-        title="プライバシーポリシー"
-        jp="最終改定日: 2026年4月1日"
-      />
+      <PageHeader kicker="法務 — 法務" title="プライバシーポリシー" jp="最終改定日: 2026年4月1日" />
       <section className="mx-auto max-w-3xl px-6 pt-12">
         <div className="space-y-10">
           {SECTIONS.map((s) => (

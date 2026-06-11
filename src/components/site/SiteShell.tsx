@@ -19,7 +19,7 @@ function Logo({ size = "md" }: { size?: "sm" | "md" }) {
       <div className={size === "md" ? "leading-tight" : "leading-tight text-sm"}>
         <div className="font-display text-base font-black tracking-tight">幻界創造スタジオ</div>
         <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-[var(--text-muted)]">
-          GENKAI · SOUZOU
+          幻界 · 創造
         </div>
       </div>
     </Link>
@@ -57,7 +57,7 @@ function TopNav() {
           <div className="hidden items-center gap-3 lg:flex">
             <Link
               href="/contact"
-              className="rounded-sm border border-[color-mix(in_oklab,var(--accent-cyan)_50%,transparent)] bg-[color-mix(in_oklab,var(--accent-cyan)_8%,transparent)] px-4 py-2 text-xs font-bold uppercase tracking-[0.25em] text-[var(--accent-cyan)] transition-all hover:bg-[color-mix(in_oklab,var(--accent-cyan)_20%,transparent)]"
+              className="rounded-sm border border-[color-mix(in_oklab,var(--accent-cyan)_50%,transparent)] bg-[color-mix(in_oklab,var(--accent-cyan)_8%,transparent)] px-4 py-2 text-xs font-semibold tracking-[0.15em] text-[var(--accent-cyan)] transition-all hover:bg-[color-mix(in_oklab,var(--accent-cyan)_20%,transparent)]"
             >
               依頼相談
             </Link>
@@ -104,7 +104,7 @@ function Footer() {
             幻界創造スタジオは、東京を拠点に独自IPの物語体験を届けるゲーム開発スタジオです。
           </p>
           <div className="mt-6 font-mono text-[11px] uppercase tracking-[0.25em] text-[var(--text-muted)]">
-            Est. 2014 · Tokyo, Japan
+            設立 2014年 · 東京、日本
           </div>
         </div>
 
@@ -165,14 +165,19 @@ function Footer() {
             <div>Email: contact@genkai-souzou.co.jp</div>
           </address>
           <div className="mt-6 flex gap-2">
-            {["X", "YT", "DC", "IG"].map((s) => (
+            {[
+              { abbr: "X", label: "X（旧Twitter）" },
+              { abbr: "YT", label: "YouTube" },
+              { abbr: "DC", label: "Discord" },
+              { abbr: "IG", label: "Instagram" },
+            ].map((s) => (
               <a
-                key={s}
+                key={s.abbr}
                 href="#"
-                aria-label={s}
+                aria-label={s.label}
                 className="grid h-9 w-9 place-items-center rounded-sm border border-[color-mix(in_oklab,var(--accent-cyan)_25%,transparent)] font-mono text-[10px] text-[var(--text-muted)] transition-colors hover:border-[var(--accent-cyan)] hover:text-[var(--accent-cyan)]"
               >
-                {s}
+                {s.abbr}
               </a>
             ))}
           </div>
@@ -180,7 +185,7 @@ function Footer() {
       </div>
       <div className="border-t border-[color-mix(in_oklab,var(--accent-cyan)_10%,transparent)]">
         <div className="mx-auto flex max-w-[1400px] flex-col items-center justify-between gap-2 px-6 py-6 text-xs text-[var(--text-muted)] md:flex-row">
-          <div>© 2014–2026 Genkai Souzou Studio Inc. 無断転載を禁じます。</div>
+          <div>© 2014–2026 株式会社幻界創造スタジオ 無断転載を禁じます。</div>
           <div className="font-mono uppercase tracking-[0.25em]">記憶 — 創造 — 物語</div>
         </div>
       </div>

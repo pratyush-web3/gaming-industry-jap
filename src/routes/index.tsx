@@ -180,7 +180,7 @@ export default function Home() {
         jp="開発チーム制作、ブラウザ用ミニアーケード。"
         right={
           <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-[var(--text-muted)]">
-            DEMO BUILD v0.7 · 幻界フォージ製
+            デモビルド v0.7 · 幻界フォージ製
           </span>
         }
       >
@@ -265,7 +265,11 @@ export default function Home() {
       </Section>
 
       {/* ===== 今後のリリース ===== */}
-      <Section kicker="04 — 今後のリリース" title="今後のリリース" jp="まだ見ぬ世界が、近づいている。">
+      <Section
+        kicker="04 — 今後のリリース"
+        title="今後のリリース"
+        jp="まだ見ぬ世界が、近づいている。"
+      >
         <div className="space-y-4">
           {upcoming.map((g, i) => (
             <div
@@ -502,7 +506,11 @@ export default function Home() {
       </Section>
 
       {/* ===== イベント出展 ===== */}
-      <Section kicker="13 — イベント出展予定" title="イベント出展予定" jp="現地で、直接お会いしましょう。">
+      <Section
+        kicker="13 — イベント出展予定"
+        title="イベント出展予定"
+        jp="現地で、直接お会いしましょう。"
+      >
         <div className="grid gap-4 md:grid-cols-2">
           {EVENTS.map((e) => (
             <div
@@ -526,7 +534,11 @@ export default function Home() {
       </Section>
 
       {/* ===== メディア掲載 ===== */}
-      <Section kicker="14 — メディア掲載" title="メディア掲載" jp="編集者たちが、作品に贈った言葉。">
+      <Section
+        kicker="14 — メディア掲載"
+        title="メディア掲載"
+        jp="編集者たちが、作品に贈った言葉。"
+      >
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {PRESS.map((p) => (
             <figure key={p.outlet} className="card-surface rounded-sm p-6">
@@ -545,7 +557,11 @@ export default function Home() {
       </Section>
 
       {/* ===== パートナー ===== */}
-      <Section kicker="15 — パートナー" title="パートナー" jp="共に世界を運ぶ、信頼できる仲間たち。">
+      <Section
+        kicker="15 — パートナー"
+        title="パートナー"
+        jp="共に世界を運ぶ、信頼できる仲間たち。"
+      >
         <div className="card-surface grid grid-cols-2 gap-px overflow-hidden rounded-sm bg-[color-mix(in_oklab,var(--accent-cyan)_12%,transparent)] sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
           {PARTNERS.map((p) => (
             <div
@@ -587,7 +603,11 @@ export default function Home() {
       </Section>
 
       {/* ===== FAQ ===== */}
-      <Section kicker="17 — よくあるご質問" title="よくあるご質問" jp="お問い合わせの前に、まずこちらを。">
+      <Section
+        kicker="17 — よくあるご質問"
+        title="よくあるご質問"
+        jp="お問い合わせの前に、まずこちらを。"
+      >
         <div className="card-surface divide-y divide-[color-mix(in_oklab,var(--accent-cyan)_12%,transparent)] overflow-hidden rounded-sm">
           {FAQ.map((f, i) => (
             <details
@@ -611,7 +631,11 @@ export default function Home() {
       </Section>
 
       {/* ===== クリエイターの言葉 ===== */}
-      <Section kicker="18 — クリエイターの言葉" title="クリエイターの言葉" jp="代表取締役・葛城凛より。">
+      <Section
+        kicker="18 — クリエイターの言葉"
+        title="クリエイターの言葉"
+        jp="代表取締役・葛城凛より。"
+      >
         <div className="card-surface relative overflow-hidden rounded-sm p-10 md:p-14">
           <Compass size={28} className="text-[var(--accent-cyan)]" />
           <blockquote className="mt-6 max-w-3xl font-serif-jp text-xl leading-loose md:text-2xl">

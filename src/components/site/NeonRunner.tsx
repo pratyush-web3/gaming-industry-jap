@@ -365,11 +365,11 @@ export function NeonRunner() {
       ctx.fillRect(0, 0, W, 26);
       ctx.fillStyle = "#34F5C5";
       ctx.font = "bold 12px ui-monospace, monospace";
-      ctx.fillText(`SCORE  ${String(Math.floor(s.score)).padStart(6, "0")}`, 12, 17);
+      ctx.fillText(`スコア  ${String(Math.floor(s.score)).padStart(6, "0")}`, 12, 17);
       ctx.fillStyle = "#00D4FF";
-      ctx.fillText(`HIGH  ${String(high).padStart(6, "0")}`, W - 130, 17);
+      ctx.fillText(`最高  ${String(high).padStart(6, "0")}`, W - 130, 17);
       ctx.fillStyle = "#FF4FD8";
-      ctx.fillText(`SPD  ${s.speed.toFixed(1)}`, W / 2 - 30, 17);
+      ctx.fillText(`速度  ${s.speed.toFixed(1)}`, W / 2 - 30, 17);
 
       if (!s.over) raf = requestAnimationFrame(loop);
     };
@@ -383,12 +383,12 @@ export function NeonRunner() {
         <div className="flex items-center gap-3">
           <span className="inline-flex h-2 w-2 animate-pulse-ring rounded-full bg-[var(--accent-glow)]" />
           <span className="font-mono text-[10px] uppercase tracking-[0.35em] text-[var(--accent-cyan)]">
-            ARCADE · ネオンランナー
+            アーケード · ネオンランナー
           </span>
         </div>
         <div className="flex items-center gap-4 font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--text-muted)]">
-          <span className="hidden sm:inline">SPACE / TAP = JUMP</span>
-          <span className="hidden sm:inline">↓ = SLIDE</span>
+          <span className="hidden sm:inline">スペース / タップ = ジャンプ</span>
+          <span className="hidden sm:inline">↓ = スライド</span>
           <span className="inline-flex items-center gap-1 text-[var(--accent-glow)]">
             <Trophy size={11} /> {high}
           </span>
@@ -423,7 +423,7 @@ export function NeonRunner() {
                 <span className="text-gradient">ネオン</span>ランナー
               </div>
               <div className="mt-2 font-mono text-[11px] uppercase tracking-[0.35em] text-[var(--text-muted)]">
-                NEON RUNNER · TOKYO 2099
+                ネオンランナー · 東京 2099
               </div>
               <p className="mx-auto mt-4 max-w-sm text-sm leading-loose text-[var(--text-muted)]">
                 ネオンの霧に沈む新東京帝都。障害物を躱し、〈エナジー結晶〉を集めてハイスコアを目指せ。
@@ -432,7 +432,7 @@ export function NeonRunner() {
                 onClick={start}
                 className="mt-6 inline-flex items-center gap-2 rounded-sm bg-[var(--accent-cyan)] px-7 py-3 text-sm font-bold uppercase tracking-[0.3em] text-background transition hover:bg-[var(--accent-glow)]"
               >
-                ▶ START GAME
+                ▶ ゲームスタート
               </button>
             </div>
           </div>
@@ -443,20 +443,20 @@ export function NeonRunner() {
           <div className="absolute inset-0 grid place-items-center bg-[color-mix(in_oklab,var(--background)_75%,transparent)] backdrop-blur-sm">
             <div className="text-center">
               <div className="font-mono text-[11px] uppercase tracking-[0.4em] text-[var(--accent-magenta)]">
-                SYSTEM FAILURE
+                システム障害
               </div>
               <div className="mt-3 font-display text-4xl font-black md:text-6xl text-gradient">
-                GAME OVER
+                ゲームオーバー
               </div>
               <div className="mt-5 flex items-center justify-center gap-8 font-mono text-xs uppercase tracking-[0.3em]">
                 <div>
-                  <div className="text-[var(--text-muted)]">SCORE</div>
+                  <div className="text-[var(--text-muted)]">スコア</div>
                   <div className="mt-1 font-display text-2xl text-[var(--accent-cyan)]">
                     {score}
                   </div>
                 </div>
                 <div>
-                  <div className="text-[var(--text-muted)]">BEST</div>
+                  <div className="text-[var(--text-muted)]">ベスト</div>
                   <div className="mt-1 font-display text-2xl text-[var(--accent-glow)]">{high}</div>
                 </div>
               </div>
@@ -464,7 +464,7 @@ export function NeonRunner() {
                 onClick={start}
                 className="mt-6 inline-flex items-center gap-2 rounded-sm border border-[var(--accent-cyan)] bg-[color-mix(in_oklab,var(--accent-cyan)_15%,transparent)] px-6 py-3 text-sm font-bold uppercase tracking-[0.3em] text-foreground transition hover:bg-[color-mix(in_oklab,var(--accent-cyan)_25%,transparent)]"
               >
-                <RotateCcw size={14} /> RETRY
+                <RotateCcw size={14} /> リトライ
               </button>
             </div>
           </div>

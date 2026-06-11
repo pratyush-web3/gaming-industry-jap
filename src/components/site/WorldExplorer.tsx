@@ -14,7 +14,7 @@ export function WorldExplorer() {
         {/* Region list */}
         <aside className="border-b border-[color-mix(in_oklab,var(--accent-cyan)_18%,transparent)] bg-[color-mix(in_oklab,var(--surface-2)_50%,transparent)] lg:border-b-0 lg:border-r">
           <div className="px-5 pt-5 font-mono text-[10px] uppercase tracking-[0.3em] text-[var(--text-muted)]">
-            REGIONS · 領域
+            領域一覧
           </div>
           <ul className="p-3">
             {WORLD_REGIONS.map((r, i) => {
@@ -75,7 +75,7 @@ export function WorldExplorer() {
 
             {/* HUD coords */}
             <div className="absolute left-5 top-5 font-mono text-[10px] uppercase tracking-[0.3em] text-foreground/80">
-              LAT {(Math.abs(region.id.charCodeAt(0)) % 90).toFixed(3)}° · LON{" "}
+              緯度 {(Math.abs(region.id.charCodeAt(0)) % 90).toFixed(3)}° · 経度{" "}
               {((region.id.charCodeAt(1) ?? 65) % 180).toFixed(3)}°
             </div>
             {[
@@ -89,7 +89,7 @@ export function WorldExplorer() {
 
             <div className="absolute inset-x-0 bottom-0 p-6 md:p-8">
               <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-[var(--accent-cyan)]">
-                REGION FILE · {region.reading}
+                領域ファイル · {region.reading}
               </div>
               <div
                 key={region.name}
@@ -103,7 +103,7 @@ export function WorldExplorer() {
           <div className="grid gap-6 p-6 md:grid-cols-5 md:p-8">
             <div className="md:col-span-3">
               <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-[var(--accent-cyan)]">
-                LORE · 伝承
+                伝承
               </div>
               <p
                 key={region.lore}
@@ -113,7 +113,7 @@ export function WorldExplorer() {
               </p>
               <div className="mt-6">
                 <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-[var(--accent-cyan)]">
-                  LANDMARKS · 名所
+                  名所
                 </div>
                 <ul className="mt-3 space-y-2">
                   {region.landmarks.map((l) => (

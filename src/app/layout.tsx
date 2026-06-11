@@ -4,15 +4,15 @@ import "@/styles.css";
 export const metadata: Metadata = {
   title: "幻界創造スタジオ — 記憶に残る世界を、創る。",
   description: "東京拠点のゲーム開発スタジオ。コンソール・PC向けに独自IPの物語体験を届けます。",
-  authors: [{ name: "Lovable" }],
+  authors: [{ name: "幻界創造スタジオ" }],
   openGraph: {
-    title: "幻界創造スタジオ — Genkai Souzou Studio",
+    title: "幻界創造スタジオ — 株式会社幻界創造",
     description: "記憶に残る世界を創り、人々の感情を動かす。",
     type: "website",
   },
   twitter: {
     card: "summary",
-    site: "@Lovable",
+    site: "@GenkaiStudio",
   },
 };
 

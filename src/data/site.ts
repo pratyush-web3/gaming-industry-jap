@@ -383,11 +383,11 @@ export const TEAM = [
 ];
 
 export const AWARDS = [
-  { year: "2026", title: "Japan Game Awards 最優秀ナラティブ賞", work: "星影クロニクル" },
-  { year: "2025", title: "BitSummit Audio Excellence Award", work: "零界機兵" },
-  { year: "2024", title: "PlayStation Partner Awards Grand Prize", work: "星影クロニクル" },
-  { year: "2023", title: "Famitsu Awards 優秀賞", work: "零界機兵" },
-  { year: "2020", title: "CEDEC AWARDS ビジュアルアーツ部門 最優秀賞", work: "蒼穹プロトタイプ" },
+  { year: "2026", title: "日本ゲーム大賞 最優秀ナラティブ賞", work: "星影クロニクル" },
+  { year: "2025", title: "BitSummit 音響優秀賞", work: "零界機兵" },
+  { year: "2024", title: "PlayStation パートナーアワード グランプリ", work: "星影クロニクル" },
+  { year: "2023", title: "ファミ通アワード 優秀賞", work: "零界機兵" },
+  { year: "2020", title: "CEDEC アワード ビジュアルアーツ部門 最優秀賞", work: "蒼穹プロトタイプ" },
 ];
 
 export const TESTIMONIALS = [
@@ -502,33 +502,33 @@ export const ROADMAP = [
     quarter: "2026 Q2",
     phase: "発表",
     item: "『蒼穹ノ境界』ゲームプレイトレーラー初公開",
-    tag: "MARKETING",
+    tag: "マーケティング",
   },
   {
     quarter: "2026 Q3",
     phase: "βテスト",
     item: "『断層の記憶』クローズドベータ募集（先着3万名）",
-    tag: "QA",
+    tag: "品質保証",
   },
   {
     quarter: "2026 Q4",
     phase: "発売",
     item: "『断層の記憶』全世界同時ローンチ（11作目）",
-    tag: "LAUNCH",
+    tag: "発売",
   },
   {
     quarter: "2027 Q1",
     phase: "拡張",
     item: "『星影クロニクル』追加章「終曲の星」配信",
-    tag: "DLC",
+    tag: "追加コンテンツ",
   },
   {
     quarter: "2027 Q2",
     phase: "発表",
     item: "新規IP「Project: Aoi」コンセプト公開",
-    tag: "REVEAL",
+    tag: "発表",
   },
-  { quarter: "2027 Q4", phase: "発売", item: "『蒼穹ノ境界』全世界同時ローンチ", tag: "LAUNCH" },
+  { quarter: "2027 Q4", phase: "発売", item: "『蒼穹ノ境界』全世界同時ローンチ", tag: "発売" },
 ];
 
 export const PRESS = [
@@ -547,7 +547,7 @@ export const PRESS = [
   {
     outlet: "Game*Spark",
     quote: "選択の重みを、ここまで誠実に描いた作品は稀。",
-    score: "Editor's Pick",
+    score: "編集部推薦",
   },
   {
     outlet: "電ファミニコゲーマー",
